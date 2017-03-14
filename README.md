@@ -1,4 +1,4 @@
-Geoname divosions
+Geoname divisions
 =========
 
 Parser to get list of divisions and subdivisions with ISO-3166-2 codes in CSV format from http://www.geonames.org/
