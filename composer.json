@@ -1,0 +1,17 @@
+{
+    "name": "tigrov/geoname-divisions",
+    "description": "Parser for country divisions from Geoname.",
+    "keywords": ["geoname", "region", "state", "province", "division", "subdivision"],
+    "type": "library",
+    "license": "MIT",
+    "support": {
+        "source": "https://github.com/tigrov/geoname-divisions"
+    },
+    "authors": [
+        {
+            "name": "Sergei Tigrov",
+            "email": "rrr-r@ya.ru"
+        }
+    ],
+    "minimum-stability": "dev"
+}
