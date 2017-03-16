@@ -63,7 +63,7 @@ define('HDOM_INFO_ENDSPACE',7);
 define('DEFAULT_TARGET_CHARSET', 'UTF-8');
 define('DEFAULT_BR_TEXT', "\r\n");
 define('DEFAULT_SPAN_TEXT', " ");
-define('MAX_FILE_SIZE', 600000);
+define('MAX_FILE_SIZE', 60000000);
 // helper functions
 // -----------------------------------------------------------------------------
 // get html dom from file
@@ -215,9 +215,9 @@ class simple_html_dom_node
 		}
 
 		$string .= " HDOM_INNER_INFO: '";
-		if (isset($node->_[HDOM_INFO_INNER]))
+		if (isset($this->_[HDOM_INFO_INNER]))
 		{
-			$string .= $node->_[HDOM_INFO_INNER] . "'";
+			$string .= $this->_[HDOM_INFO_INNER] . "'";
 		}
 		else
 		{

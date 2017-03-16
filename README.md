@@ -16,7 +16,7 @@ result/divisions.csv
 result/subdivisions.csv
 ~~~
 
-The first column is country ISO-3166-1 code
+The first column is a country ISO-3166-1 code
 
 Divisions and subdivisions marked as **"no longer exists:"** are skipped.  
 Territories and other divisions and subdivisions without **Geoname ID (URL)** are skipped.
@@ -27,6 +27,10 @@ Territories and other divisions and subdivisions without **Geoname ID (URL)** ar
 * http://www.geonames.org/GB/administrative-division-.html
 * http://www.geonames.org/US/administrative-division-.html
 
+Additional
+----------
+Parser for country divisions from Wikipedia:  
+https://github.com/tigrov/wikipedia-divisions
 
 License
 -------
