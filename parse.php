@@ -5,7 +5,7 @@
  * To execute run the command in shell `php parse.php`
  * The result will be saved in files `result/divisions.csv`, `result/subdivisions.csv`
  *
- * @link https://github.com/tigrov/whois
+ * @link https://github.com/tigrov/geoname-divisions
  * @author Sergei Tigrov <rrr-r@ya.ru>
  */
 
@@ -67,31 +67,29 @@ foreach ($countryCodes as $countryCode) {
                     break;
                 }
 
-                // Skip territories
-                if ($geonameId = GetGeonameId($tdNodes[4])) {
-                    $row = [
-                        $countryCode,
-                        $tdNodes[1]->text(),
-                        $tdNodes[2]->text(),
-                        $tdNodes[3]->text(),
-                        $geonameId,
-                        $tdNodes[4]->firstChild()->firstChild()->text(),
-                        GetWikipediaLink($tdNodes[4]),
-                        GetTypeId($tdNodes[5]),
-                        $tdNodes[5]->text(),
-                        GetGeonameId($tdNodes[6]),
-                        $tdNodes[6]->text(),
-                        str_replace(',', '', $tdNodes[7]->text()),
-                        $tdNodes[8]->text(),
-                        $tdNodes[9]->text(),
-                        $tdNodes[10]->text(),
-                        $tdNodes[11]->text(),
-                    ];
+                $nameNode = $tdNodes[4]->firstChild() ?: $tdNodes[4];
+                $row = [
+                    $countryCode,
+                    $tdNodes[1]->text(),
+                    $tdNodes[2]->text(),
+                    $tdNodes[3]->text(),
+                    GetGeonameId($tdNodes[4]),
+                    ($nameNode->firstChild() ?: $nameNode)->text(),
+                    GetWikipediaLink($tdNodes[4]),
+                    GetTypeId($tdNodes[5]),
+                    $tdNodes[5]->text(),
+                    GetGeonameId($tdNodes[6]),
+                    $tdNodes[6]->text(),
+                    str_replace(',', '', $tdNodes[7]->text()),
+                    $tdNodes[8]->text(),
+                    $tdNodes[9]->text(),
+                    $tdNodes[10]->text(),
+                    $tdNodes[11]->text(),
+                ];
 
-                    $row = array_map('trim', $row);
+                $row = array_map('trim', $row);
 
-                    fputcsv($divisionsCsv, $row, CSV_DELIMITER);
-                }
+                fputcsv($divisionsCsv, $row, CSV_DELIMITER);
             }
         }
     }
@@ -108,31 +106,30 @@ foreach ($countryCodes as $countryCode) {
                     break;
                 }
 
-                if ($geonameId = GetGeonameId($tdNodes[5])) {
-                    $row = [
-                        $countryCode,
-                        $tdNodes[1]->text(),
-                        $tdNodes[2]->text(),
-                        $tdNodes[3]->text(),
-                        $tdNodes[4]->text(),
-                        $geonameId,
-                        $tdNodes[5]->firstChild()->firstChild()->text(),
-                        GetWikipediaLink($tdNodes[5]),
-                        GetTypeId($tdNodes[6]),
-                        $tdNodes[6]->text(),
-                        GetGeonameId($tdNodes[7]),
-                        $tdNodes[7]->text(),
-                        str_replace(',', '', $tdNodes[8]->text()),
-                        $tdNodes[9]->text(),
-                        $tdNodes[10]->text(),
-                        $tdNodes[11]->text(),
-                        $tdNodes[12]->text(),
-                    ];
+                $nameNode = $tdNodes[5]->firstChild() ?: $tdNodes[5];
+                $row = [
+                    $countryCode,
+                    $tdNodes[1]->text(),
+                    $tdNodes[2]->text(),
+                    $tdNodes[3]->text(),
+                    $tdNodes[4]->text(),
+                    GetGeonameId($tdNodes[5]),
+                    ($nameNode->firstChild() ?: $nameNode)->text(),
+                    GetWikipediaLink($tdNodes[5]),
+                    GetTypeId($tdNodes[6]),
+                    $tdNodes[6]->text(),
+                    GetGeonameId($tdNodes[7]),
+                    $tdNodes[7]->text(),
+                    str_replace(',', '', $tdNodes[8]->text()),
+                    $tdNodes[9]->text(),
+                    $tdNodes[10]->text(),
+                    $tdNodes[11]->text(),
+                    $tdNodes[12]->text(),
+                ];
 
-                    $row = array_map('trim', $row);
+                $row = array_map('trim', $row);
 
-                    fputcsv($subdivisionsCsv, $row, CSV_DELIMITER);
-                }
+                fputcsv($subdivisionsCsv, $row, CSV_DELIMITER);
             }
         }
     }

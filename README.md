@@ -19,7 +19,6 @@ result/subdivisions.csv
 The first column is a country ISO-3166-1 code
 
 Divisions and subdivisions marked as **"no longer exists:"** are skipped.  
-Territories and other divisions and subdivisions without **Geoname ID (URL)** are skipped.
 
 **Example of parsed urls:**
 
