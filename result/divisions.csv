@@ -193,7 +193,6 @@ AZ;MAS;32;32;147551;Masalli;http://en.wikipedia.org/wiki/Masall%C4%B1;16;"rayonu
 AZ;MI;33;33;828299;Mingəçevir;http://en.wikipedia.org/wiki/Mingachevir;17;"şəhəri (city)";585514;Mingelchaur;99775;;AS;;
 AZ;NA;34;34;828300;Naftalan;http://en.wikipedia.org/wiki/Naftalan;17;"şəhəri (city)";585400;Naftalan;7403;;AS;;
 AZ;NEF;36;36;147422;Neftcala;http://en.wikipedia.org/wiki/Neftchala_Rayon;16;"rayonu (district)";147425;Neftçala;75356;;AS;;
-AZ;NV;75;75;8411069;Naxçivan;http://en.wikipedia.org/wiki/Nakhchivan_City;17;"şəhəri (city)";147429;Nakhchivan;74500;;AS;;
 AZ;NX;35;35;147435;Naxcivan;http://en.wikipedia.org/wiki/Nakhchivan_Autonomous_Republic;15;"muxtar respublikası (autonomous republic)";147278;Şahbuz;64754;;AS;;
 AZ;OGU;37;37;584742;Oguz;http://en.wikipedia.org/wiki/Oghuz_Rayon;16;"rayonu (district)";585333;Oğuz;38915;;AS;;
 AZ;QAB;38;38;585738;Qabala;http://en.wikipedia.org/wiki/Qabala_Rayon;16;"rayonu (district)";585231;Qǝbǝlǝ;93770;;AS;;
@@ -215,7 +214,7 @@ AZ;SM;54;54;828305;Sumqayit;http://en.wikipedia.org/wiki/Sumqayit;17;"şəhəri 
 AZ;SMI;50;50;585030;Samaxi;http://en.wikipedia.org/wiki/Shamakhi_Rayon;16;"rayonu (district)";585156;Shamakhi;85795;;AS;;
 AZ;SMX;52;52;828302;Samux;http://en.wikipedia.org/wiki/Samukh_Rayon;16;"rayonu (district)";585177;Safaraliyev;50787;;AS;;
 AZ;SR;07;07;409417;Şirvan;http://en.wikipedia.org/wiki/Shirvan_%28city%29;17;"şəhəri (city)";148565;Şirvan;81200;;AS;;
-AZ;SUS;56;56;409419;"Susa Sahari";http://en.wikipedia.org/wiki/Shusha;17;"şəhəri (city)";147105;Shushi;4200;;AS;;
+AZ;SUS;55;55;147163;Susa;http://en.wikipedia.org/wiki/Shusha_Rayon;16;"rayonu (district)";;;29500;;AS;;
 AZ;TAR;57;57;409420;Tartar;http://en.wikipedia.org/wiki/Tartar_Rayon;16;"rayonu (district)";584871;Tǝrtǝr;;;AS;;
 AZ;TOV;58;58;584861;Tovuz;http://en.wikipedia.org/wiki/Tovuz_Rayon;16;"rayonu (district)";584821;Tovuz;149760;;AS;;
 AZ;UCA;59;59;584783;Ucar;http://en.wikipedia.org/wiki/Ujar_Rayon;16;"rayonu (district)";584791;Ucar;74067;;AS;;
@@ -230,6 +229,7 @@ AZ;YEV;67;67;584650;Yevlax;http://en.wikipedia.org/wiki/Yevlakh_Rayon;16;"rayonu
 AZ;ZAN;69;69;146900;Zangilan;http://en.wikipedia.org/wiki/Zangilan_Rayon;16;"rayonu (district)";146899;Zangelan;32500;;AS;;
 AZ;ZAQ;70;70;584604;Zaqatala;http://en.wikipedia.org/wiki/Zaqatala_Rayon;16;"rayonu (district)";584596;Zaqatala;111419;;AS;;
 AZ;ZAR;71;71;584583;Zardab;http://en.wikipedia.org/wiki/Zardab_Rayon;16;"rayonu (district)";584586;Zǝrdab;51800;;AS;;
+AZ;;56;56;409419;"Susa Sahari";http://en.wikipedia.org/wiki/Shusha;17;"şəhəri (city)";147105;Shushi;4200;;AS;;
 BA;BIH;01;01;3229999;"Federacija Bosna i Hercegovina";http://en.wikipedia.org/wiki/Federation_of_Bosnia_and_Herzegovina;18;"Bosne i Hercegovine, Federacija [Serbocroatian]";3191281;Sarajevo;2371603;;EU;;
 BA;BRC;03;BRC;3294903;"Brcko District";http://en.wikipedia.org/wiki/Br%C4%8Dko_District;;;3203521;Brčko;87332;;EU;;
 BA;SRP;02;02;3230000;"Republika Srpska";http://en.wikipedia.org/wiki/Republika_Srpska;19;"republika (republic)";3204541;"Banja Luka";1326991;;EU;;
@@ -2233,6 +2233,14 @@ MU;RO;23;23;1547449;Rodrigues;http://en.wikipedia.org/wiki/Rodrigues;195;depende
 MU;RR;19;19;934090;"Riviere du Rempart";http://en.wikipedia.org/wiki/Rivi%C3%A8re_du_Rempart_District;196;district;934091;"Rivière du Rempart";107250;;AF;;
 MU;SA;20;20;934017;Savanne;http://en.wikipedia.org/wiki/Savanne_District;196;district;933995;Souillac;70158;;AF;;
 MU;VP;;;;Vacoas-Phoenix;;338;city;;;;;AF;;
+MV;CE;51;51;8030592;Medhu;http://en.wikipedia.org/wiki/Central_Province%2C_Maldives;317;"sarahahdhu (province)";;;13442;;AS;;2010.10.15
+MV;MLE;40;40;1337624;Male;http://en.wikipedia.org/wiki/Maale%2C_Maldives;198;municipality;1282027;Male;105000;;AS;;2010.10.15
+MV;NC;53;53;8030594;"Medhu Uthuru";http://en.wikipedia.org/wiki/North_Central_Province%2C_Maldives;317;"sarahahdhu (province)";;;31202;;AS;;2010.10.15
+MV;NO;54;54;8030595;Uthuru;http://en.wikipedia.org/wiki/North_Province%2C_Maldives;317;"sarahahdhu (province)";;;43539;;AS;;2010.10.15
+MV;SC;52;52;8030593;"Medhu Dhekunu";http://en.wikipedia.org/wiki/South_Central_Province;317;"sarahahdhu (province)";;;20483;;AS;;2010.10.15
+MV;SU;48;48;8030589;Dhekunu;http://en.wikipedia.org/wiki/South_Province%2C_Maldives;317;"sarahahdhu (province)";;;25662;;AS;;2010.10.15
+MV;UN;50;50;8030591;"Mathi Uthuru";http://en.wikipedia.org/wiki/Upper_North_Province;317;"sarahahdhu (province)";;;41672;;AS;;2010.10.15
+MV;US;49;49;8030590;"Mathi Dhekunu";http://en.wikipedia.org/wiki/Upper_South_Province;317;"sarahahdhu (province)";;;19275;;AS;;2010.10.15
 MW;C;;C;931597;Central;http://en.wikipedia.org/wiki/Central_Region%2C_Malawi;;;927967;Lilongwe;4814000;;AF;;
 MW;N;;N;924591;Northern;http://en.wikipedia.org/wiki/Northern_Region%2C_Malawi;;;925475;Mzuzu;1389000;;AF;;
 MW;S;;S;923817;Southern;http://en.wikipedia.org/wiki/Southern_Region%2C_Malawi;;;931755;Blantyre;5345000;;AF;;
